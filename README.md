@@ -2,17 +2,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+nodeのバージョンを設定
+- 浦上個人的にnodeのバージョン管理ツールは[volta](https://volta.sh/)がおすすめ
+- nodeのバージョンは下記で指定してね
+```
+node -v
+v22.8.0
+```
 
+サービスの立ち上げ
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+APIの疎通確認
+- `localhost:3000/about`ページでAPIの疎通を確認できる
+- APIは`app/api/route.ts`に実装されているAPIで、ボタンをクリックした時にconsole上でAPIが取得されていたら成功
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
